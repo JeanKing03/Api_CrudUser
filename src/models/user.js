@@ -1,6 +1,5 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../utils/connection");
-const { password } = require("pg/lib/defaults");
 
 const user = sequelize.define("user", {
   firstName: {

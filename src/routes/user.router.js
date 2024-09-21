@@ -12,4 +12,3 @@ userRouter.route("/").get(getAll).post(create);
 userRouter.route("/:id").get(getOne).put(update).delete(destroy);
 
 module.exports = userRouter;
-``;

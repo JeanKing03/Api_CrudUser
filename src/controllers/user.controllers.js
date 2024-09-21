@@ -1,8 +1,5 @@
 const catchError = require("../utils/catchError");
 const user = require("../models/user");
-const { use } = require("express/lib/application");
-const { joinSQLFragments } = require("sequelize/lib/utils/join-sql-fragments");
-const { json } = require("sequelize");
 
 const create = catchError(async (req, res) => {
   const result = await user.create(req.body);
